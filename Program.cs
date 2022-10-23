@@ -6,6 +6,7 @@ int z = Convert.ToInt32(Console.ReadLine());
 
 if (z == 24)
 {
+    Console.WriteLine("Введите число");
     bool isParsedA = int.TryParse(Console.ReadLine(), out int a);
 
     if (!isParsedA)
@@ -21,8 +22,7 @@ if (z == 24)
     }
 
     int sum = GetSumNumbers(a);
-
-    Console.WriteLine(sum);
+    Console.WriteLine($"Сумма чисел от 1 до {a} = {sum}");
 }
 
 // метод для задачи 28 - находит сумму чисел от 1 до заданного
@@ -46,6 +46,7 @@ int GetSumNumbers(int number)
 
 if (z == 26)
 {
+    Console.WriteLine("Введите число");
     bool isParsedNum = int.TryParse(Console.ReadLine(), out int num);
 
     if (!isParsedNum)
@@ -55,7 +56,7 @@ if (z == 26)
     }
 
     int count = CountDigit(num);
-    Console.WriteLine(count);
+    Console.WriteLine($"Количество цифр в числе - {count}");
 }
 
 // метод для задачи 26 - находит количество цифр в числе
@@ -86,6 +87,7 @@ int CountDigit(int number)
 
 if (z == 28)
 {
+    Console.WriteLine("Введите число");
     bool isParsedN = int.TryParse(Console.ReadLine(), out int n);
 
     if (!isParsedN)
@@ -102,7 +104,7 @@ if (z == 28)
 
     int comp = GetCompositionNumbers(n);
 
-    Console.WriteLine(comp);
+    Console.WriteLine($"Произведение чисел от 1 до {n} = {comp}");
 }
 
 // метод для задачи 28 - находит произведение чисел от 1 до заданного
@@ -143,6 +145,7 @@ if (z == 30)
     }
 
     int[] array = GetRandomArray(s, l, r);
+    Console.WriteLine("Массив случайных чисел:");
     PrintArray(array);
 }
 
